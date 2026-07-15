@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.DS_Store
+
+# Keep sample logs (for the deliverable) but ignore fresh run logs by default.
+logs/trading_bot.log
+logs/*.log.*
