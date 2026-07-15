@@ -1,0 +1,12 @@
+2026-07-15 04:03:27 | INFO     | trading_bot.orders | ORDER REQUEST symbol=BTCUSDT side=BUY type=MARKET quantity=0.01 price=None stop_price=None
+2026-07-15 04:03:27 | DEBUG    | trading_bot.client | REQUEST POST /fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': 0.01, 'type': 'MARKET', 'timestamp': 1784088207988, 'recvWindow': 5000}
+2026-07-15 04:03:27 | DEBUG    | trading_bot.client | RESPONSE POST /fapi/v1/order status=200 body={"orderId": 207996, "symbol": "BTCUSDT", "status": "FILLED", "side": "BUY", "type": "MARKET", "executedQty": "0.01", "avgPrice": "0", "price": "0", "updateTime": 1784088207996}
+2026-07-15 04:03:27 | INFO     | trading_bot.orders | ORDER RESPONSE orderId=207996 status=FILLED executedQty=0.01 avgPrice=0
+2026-07-15 04:03:28 | INFO     | trading_bot.orders | ORDER REQUEST symbol=BTCUSDT side=SELL type=LIMIT quantity=0.01 price=65000.0 stop_price=None
+2026-07-15 04:03:28 | DEBUG    | trading_bot.client | REQUEST POST /fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'quantity': 0.01, 'type': 'LIMIT', 'price': 65000.0, 'timeInForce': 'GTC', 'timestamp': 1784088208174, 'recvWindow': 5000}
+2026-07-15 04:03:28 | DEBUG    | trading_bot.client | RESPONSE POST /fapi/v1/order status=200 body={"orderId": 208176, "symbol": "BTCUSDT", "status": "NEW", "side": "SELL", "type": "LIMIT", "executedQty": "0", "avgPrice": "0", "price": "65000.0", "updateTime": 1784088208176}
+2026-07-15 04:03:28 | INFO     | trading_bot.orders | ORDER RESPONSE orderId=208176 status=NEW executedQty=0 avgPrice=0
+2026-07-15 04:03:28 | INFO     | trading_bot.orders | ORDER REQUEST symbol=ETHUSDT side=BUY type=STOP_LIMIT quantity=0.05 price=3400.0 stop_price=3420.0
+2026-07-15 04:03:28 | DEBUG    | trading_bot.client | REQUEST POST /fapi/v1/order params={'symbol': 'ETHUSDT', 'side': 'BUY', 'quantity': 0.05, 'type': 'STOP', 'price': 3400.0, 'stopPrice': 3420.0, 'timeInForce': 'GTC', 'timestamp': 1784088208354, 'recvWindow': 5000}
+2026-07-15 04:03:28 | DEBUG    | trading_bot.client | RESPONSE POST /fapi/v1/order status=200 body={"orderId": 208357, "symbol": "ETHUSDT", "status": "NEW", "side": "BUY", "type": "STOP", "executedQty": "0", "avgPrice": "0", "price": "3400.0", "updateTime": 1784088208357}
+2026-07-15 04:03:28 | INFO     | trading_bot.orders | ORDER RESPONSE orderId=208357 status=NEW executedQty=0 avgPrice=0
